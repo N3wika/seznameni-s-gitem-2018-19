@@ -14,7 +14,8 @@ public class Prvocinitele {
 			System.out.printf("%d =", cislo);
 			int delitel = 2;
 			while (delitel <= cislo) {
-				if ((cislo % delitel) == 0) {
+				//if projede jednou dokola a pokračuje, while zkouší stejného dělitele, dokud s ním lze dělit
+				while ((cislo % delitel) == 0) {
 					System.out.printf(" %d", delitel);
 					cislo /= delitel;
 				}
